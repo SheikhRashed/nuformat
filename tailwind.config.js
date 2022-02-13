@@ -1,7 +1,7 @@
 module.exports = {
 	content: ['./src/sass/**/*.{sass,scss,css}', './**/*.html'],
 
-	darkMode: false, // or 'media' or 'class'
+	darkMode: 'media', // or 'media' or 'class'
 	theme: {
 		extend: {
 			colors: {
@@ -24,13 +24,24 @@ module.exports = {
 				'heading-three': ['40px', '48px'],
 				'heading-four': ['20px', '28px'],
 				'body-20/28': ['20px', '28px'],
+				'body-16/24': ['16px', '24px'],
 				'primary-button': ['20px', '28px'],
 				'secondary-button': ['16px', '24px'],
 			},
+			width: {
+				140: '140px',
+				375: '375px',
+			},
+			maxWidth: {
+				140: '140px',
+			},
+			height: {
+				48: '48px',
+			},
+			boxShadow: {
+				button: ' 0px 2px 8px 0px #0000003D',
+			},
 		},
-	},
-	variants: {
-		extend: {},
 	},
 	plugins: [],
 }
