@@ -15,6 +15,18 @@ module.exports = {
 				'red-29': '#CA2729',
 				'orange-2a': '#CF692A',
 			},
+			fontFamily: {
+				primary: ['Poppins', ' sans-serif'],
+			},
+			fontSize: {
+				'heading-one': ['56px', '64px'],
+				'heading-two': ['48px', '64px'],
+				'heading-three': ['40px', '48px'],
+				'heading-four': ['20px', '28px'],
+				'body-20/28': ['20px', '28px'],
+				'primary-button': ['20px', '28px'],
+				'secondary-button': ['16px', '24px'],
+			},
 		},
 	},
 	variants: {
