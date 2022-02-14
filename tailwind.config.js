@@ -25,6 +25,7 @@ module.exports = {
 				'heading-four': ['20px', '28px'],
 				'body-20/28': ['20px', '28px'],
 				'body-16/24': ['16px', '24px'],
+				'body-14/20': ['14px', '20px'],
 				'primary-button': ['20px', '28px'],
 				'secondary-button': ['16px', '24px'],
 			},
