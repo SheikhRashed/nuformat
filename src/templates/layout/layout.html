@@ -13,6 +13,74 @@
         <link rel="stylesheet" href="assets/css/app.css" />
     </head>
     <body class="{{body_class}} font-primary ">
+
+        <!-- Header Section  -->
+        <header>
+            <!-- offer banner  -->
+            <div class="relative  py-4 bg-orange-1f ">
+                <div class="container mx-auto px-3">
+                   <p class="text-body-16/24 text-white text-center ">20% for them. 20% for you. Refer a friend now.</p>
+                </div>
+            </div>
+            <nav class="relative">
+                <div class="container mx-auto px-3">
+                  <!-- nav wrapper  -->
+                  <div class="flex items-center justify-between space-x-6">
+                    <!-- menu -->
+                    <div class=" hidden lg:block">
+                        <ul class="menu flex items-center space-x-6 ">
+                            <li class="menu-item  py-5"><a href="#" class="text-body-20/28 font-normal capitalize text-gray-71">Home</a></li>
+                            <li class="menu-item  py-5 menu-item__dropdown">
+                                <a href="#" class="text-body-20/28 font-normal capitalize text-gray-71 flex items-center ">Learn
+                                    <span class="  ml-3  inline-block">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" fill="#5B6771"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul>
+                                    <li><a href="#" class="text-body-16/24 font-normal capitalize text-gray-71"> demo text </a></li>
+                                    <li><a href="#" class="text-body-16/24 font-normal capitalize text-gray-71"> demo text </a></li>
+                                    <li><a href="#" class="text-body-16/24 font-normal capitalize text-gray-71"> demo text </a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item  py-5"><a href="#" class="text-body-20/28 font-normal capitalize text-gray-71">Shop</a></li>
+                            <li class="menu-item  py-5"><a href="#" class="text-body-20/28 font-normal capitalize text-gray-71">Blog</a></li>
+                        </ul>
+                    </div>
+                    <!-- menu icon  -->
+                    <div class=" block lg:hidden">
+                        <img src="assets/images/icons/bar.svg" alt="icon">
+                    </div>
+                      
+                    <!-- Brand logo  -->
+                     <div>
+                         <a href="#">
+                             <img src="assets/images/logo/brand-format.png" alt="brand-logo" class=" max-w-full">
+                         </a>
+                     </div>
+
+                     <!-- Shopping Carts & Account  -->
+                     <div>
+                         <ul class="flex items-center space-x-2 md:space-x-6 ">
+                             <li>
+                                 <a href="#">
+                                    <img src="assets/images/icons/cart.svg" alt="icon">
+                                </a>
+                            </li>
+                             <li>
+                                 <a href="#">
+                                    <img src="assets/images/icons/profile.svg" alt="icon">
+                                </a>
+                            </li>
+                         </ul>
+                     </div>
+                  </div>
+                </div>
+            </nav>
+        </header>
+
+
         {% block content %} {% endblock %}
 
         <!-- Footer Section  -->

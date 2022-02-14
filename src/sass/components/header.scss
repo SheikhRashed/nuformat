@@ -1,0 +1,46 @@
+header {
+	.menu {
+		&-item {
+			position: relative;
+			z-index: 1;
+
+			&__dropdown {
+				ul {
+					left: 0px;
+					top: 100%;
+					width: 180px;
+					opacity: 0;
+					overflow: hidden;
+					padding: 12px 0px;
+					position: absolute;
+					visibility: hidden;
+					pointer-events: none;
+					background-color: #fff;
+					transition: all 0.3s linear;
+					transform: translateY(-20px);
+					border-bottom-left-radius: 12px;
+					border-bottom-right-radius: 12px;
+					box-shadow: 0px 2px 8px 0px #0000003d;
+					li {
+						padding: 4px 12px;
+						&:hover {
+							background-color: #5b677123;
+						}
+						a {
+							width: 100%;
+							display: inline-block;
+						}
+					}
+				}
+				&:hover {
+					ul {
+						opacity: 1;
+						pointer-events: all;
+						visibility: visible;
+						transform: translateY(0px);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,7 +1,6 @@
 module.exports = {
 	content: ['./src/sass/**/*.{sass,scss,css}', './**/*.html'],
 
-	darkMode: 'media', // or 'media' or 'class'
 	theme: {
 		extend: {
 			colors: {
@@ -14,6 +13,7 @@ module.exports = {
 				'pink-81': '#A72381',
 				'red-29': '#CA2729',
 				'orange-2a': '#CF692A',
+				'orange-1f': '#9F6C1F',
 			},
 			fontFamily: {
 				// primary: ['Poppins', ' sans-serif'],
