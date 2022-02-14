@@ -16,7 +16,8 @@ module.exports = {
 				'orange-2a': '#CF692A',
 			},
 			fontFamily: {
-				primary: ['Poppins', ' sans-serif'],
+				// primary: ['Poppins', ' sans-serif'],
+				primary: ['halyard-regular'],
 			},
 			fontSize: {
 				'heading-one': ['56px', '64px'],
