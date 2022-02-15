@@ -1,0 +1,367 @@
+{% extends "layout/layout.html" %} {% block content %}
+
+<!-- Banner  -->
+<section class="banner relative overflow-hidden py-16 md:py-0 md:h-550" style="background: url('assets/images/all-img/bg-one.png') center center/cover no-repeat;">
+    <div class="container mx-auto px-3">
+        <!-- text content  -->
+        <div class="max-w-2xl md:mt-120">
+            <h2 class="text-heading-four md:text-heading-one text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews  -->
+<section class="relative overflow-hidden py-8 md:py-20">
+    <div class="container mx-auto px-3">
+        <!-- star heading  -->
+        <div class="text-center flex items-center flex-col mb-20">
+            <!-- star point  -->
+            <ul class="flex items-center space-x-8">
+                <li>
+                    <span><img src="assets/images/icons/star-full.svg" alt="icon" /></span>
+                </li>
+                <li>
+                    <span><img src="assets/images/icons/star-full.svg" alt="icon" /></span>
+                </li>
+                <li>
+                    <span><img src="assets/images/icons/star-full.svg" alt="icon" /></span>
+                </li>
+                <li>
+                    <span><img src="assets/images/icons/star-full.svg" alt="icon" /></span>
+                </li>
+                <li>
+                    <span><img src="assets/images/icons/star-half.svg" alt="icon" /></span>
+                </li>
+            </ul>
+            <h2 class="text-heading-four lg:text-heading-three text-gray-71 mb-4 lg:mb-6">4.5 out of 5 stars</h2>
+            <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+        </div>
+
+        <!-- Reviews -->
+        <div class="relative space-y-6">
+            <div class="relative grid grid-cols-1 lg:grid-cols-4 justify-center lg:space-x-6 pb-9 lg:pb-10 border-b border-[#5B677152]">
+                <!-- left content  -->
+                <div class="lg:col-span-1">
+                    <!-- user -->
+                    <div class="flex items-center lg:items-start flex-col lg:flex-row lg:space-x-6">
+                        <!-- img -->
+                        <div class="relative overflow-hidden w-12 lg:w-80 h-12 lg:h-80 rounded-full flex-shrink-0 mb-4 lg:mb-0">
+                            <img src="assets/images/users/user-one.png" alt="user" class="w-full h-full object-cover" />
+                        </div>
+                        <!-- text  -->
+                        <div class="text-center lg:text-left">
+                            <h2 class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-2 lg:mb-6">Shannon M.</h2>
+                            <div>
+                                <h6 class="text-body-16/24 lg:text-body-20/28 mb-2 lg:mb-4 text-gray-71">Age 18-24</h6>
+                                <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">5 months on Essential for Women 18+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right content  -->
+                <div class="lg:col-span-3 mt-4 lg:mt-0">
+                    <!-- star -->
+                    <div class="mb-6">
+                        <ul class="flex items-center justify-center lg:justify-start space-x-3">
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- review details  -->
+                    <div>
+                        <h6 class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-2 lg:mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</h6>
+                        <span class="text-body-16/24 lg:text-body-20/28 text-gray-71 font-light mb-2 lg:mb-6 inline-block">9 Feb 2022</span>
+
+                        <p class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-6 lg:mb-10">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+
+                        <!-- review action -->
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:space-x-6">
+                            <p class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-2 lg:mb-0">is this review helpful ?</p>
+                            <ul class="flex items-center space-x-3">
+                                <li class="flex items-center space-x-2">
+                                    <button>
+                                        <img src="assets/images/icons/check.svg" alt="icon" />
+                                    </button>
+                                    <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">21</p>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <button>
+                                        <img src="assets/images/icons/cross.svg" alt="icon" />
+                                    </button>
+                                    <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">
+                                        3
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative grid grid-cols-1 lg:grid-cols-4 justify-center lg:space-x-6 pb-9 lg:pb-10 border-b border-[#5B677152]">
+                <!-- left content  -->
+                <div class="lg:col-span-1">
+                    <!-- user -->
+                    <div class="flex items-center lg:items-start flex-col lg:flex-row lg:space-x-6">
+                        <!-- img -->
+                        <div class="relative overflow-hidden w-12 lg:w-80 h-12 lg:h-80 rounded-full flex-shrink-0 mb-4 lg:mb-0">
+                            <img src="assets/images/users/user-one.png" alt="user" class="w-full h-full object-cover" />
+                        </div>
+                        <!-- text  -->
+                        <div class="text-center lg:text-left">
+                            <h2 class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-2 lg:mb-6">Shannon M.</h2>
+                            <div>
+                                <h6 class="text-body-16/24 lg:text-body-20/28 mb-2 lg:mb-4 text-gray-71">Age 18-24</h6>
+                                <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">5 months on Essential for Women 18+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right content  -->
+                <div class="lg:col-span-3 mt-4 lg:mt-0">
+                    <!-- star -->
+                    <div class="mb-6">
+                        <ul class="flex items-center justify-center lg:justify-start space-x-3">
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- review details  -->
+                    <div>
+                        <h6 class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-2 lg:mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</h6>
+                        <span class="text-body-16/24 lg:text-body-20/28 text-gray-71 font-light mb-2 lg:mb-6 inline-block">9 Feb 2022</span>
+
+                        <p class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-6 lg:mb-10">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+
+                        <!-- review action -->
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:space-x-6">
+                            <p class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-2 lg:mb-0">is this review helpful ?</p>
+                            <ul class="flex items-center space-x-3">
+                                <li class="flex items-center space-x-2">
+                                    <button>
+                                        <img src="assets/images/icons/check.svg" alt="icon" />
+                                    </button>
+                                    <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">21</p>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <button>
+                                        <img src="assets/images/icons/cross.svg" alt="icon" />
+                                    </button>
+                                    <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">
+                                        3
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative grid grid-cols-1 lg:grid-cols-4 justify-center lg:space-x-6 pb-9 lg:pb-10 border-b border-[#5B677152]">
+                <!-- left content  -->
+                <div class="lg:col-span-1">
+                    <!-- user -->
+                    <div class="flex items-center lg:items-start flex-col lg:flex-row lg:space-x-6">
+                        <!-- img -->
+                        <div class="relative overflow-hidden w-12 lg:w-80 h-12 lg:h-80 rounded-full flex-shrink-0 mb-4 lg:mb-0">
+                            <img src="assets/images/users/user-one.png" alt="user" class="w-full h-full object-cover" />
+                        </div>
+                        <!-- text  -->
+                        <div class="text-center lg:text-left">
+                            <h2 class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-2 lg:mb-6">Shannon M.</h2>
+                            <div>
+                                <h6 class="text-body-16/24 lg:text-body-20/28 mb-2 lg:mb-4 text-gray-71">Age 18-24</h6>
+                                <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">5 months on Essential for Women 18+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right content  -->
+                <div class="lg:col-span-3 mt-4 lg:mt-0">
+                    <!-- star -->
+                    <div class="mb-6">
+                        <ul class="flex items-center justify-center lg:justify-start space-x-3">
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                            <li>
+                                <span><img src="assets/images/icons/star-sm.svg" alt="icon" /></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- review details  -->
+                    <div>
+                        <h6 class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-2 lg:mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</h6>
+                        <span class="text-body-16/24 lg:text-body-20/28 text-gray-71 font-light mb-2 lg:mb-6 inline-block">9 Feb 2022</span>
+
+                        <p class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-6 lg:mb-10">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+
+                        <!-- review action -->
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:space-x-6">
+                            <p class="text-body-16/24 lg:text-body-20/28 text-gray-71 mb-2 lg:mb-0">is this review helpful ?</p>
+                            <ul class="flex items-center space-x-3">
+                                <li class="flex items-center space-x-2">
+                                    <button>
+                                        <img src="assets/images/icons/check.svg" alt="icon" />
+                                    </button>
+                                    <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">21</p>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <button>
+                                        <img src="assets/images/icons/cross.svg" alt="icon" />
+                                    </button>
+                                    <p class="text-body-16/24 lg:text-body-20/28 text-gray-71">
+                                        3
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination  -->
+        <div class="pagination pt-10 flex flex-col md:flex-row items-center justify-between">
+            <div class="pagination-content flex items-center space-x-4 pb-10 md:pb-0">
+                <div class="pagination-nav pagination-nav--prev block md:hidden">
+                    <button class="inline-block relative text-body-16/24 text-gray-71">
+                        Prev
+                        <span class="block mt-2">
+                            <svg width="59" height="12" viewBox="0 0 59 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.2">
+                                    <line x1="59" y1="6" x2="5" y2="6" stroke="currentColor" stroke-width="2" />
+                                    <path d="M6 0L6 12L-5.24537e-07 6L6 0Z" fill="currentColor" />
+                                </g>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <ul class="flex items-center space-x-6">
+                    <li class="pagination-index pagination-index--active">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            1
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            2
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            3
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            4
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            5
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            ...
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            25
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            26
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            27
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            28
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            29
+                        </a>
+                    </li>
+                    <li class="pagination-index">
+                        <a href="#" class="inline-block text-body-20/28 leading-normal text-gray-71">
+                            30
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="pagination-nav pagination-nav--next block md:hidden">
+                    <button class="inline-block relative text-body-16/24 text-gray-71">
+                        Next
+                        <span class="block mt-2">
+                            <svg width="59" height="12" viewBox="0 0 59 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="6" x2="54" y2="6" stroke="currentColor" stroke-width="2" />
+                                <path d="M53 12V0L59 6L53 12Z" fill="currentColor" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="underline text-body-20 text-gray-71"> Sign in to Review</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

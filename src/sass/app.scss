@@ -7,5 +7,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+	.container {
+		@media (min-width: 1280px) {
+			max-width: 1240px;
+		}
+	}
+}
+
 // components
-@import 'components/header.scss';
+@import 'components/header';
+@import 'components/pagination';
+
+// Layouts
+@import 'layouts/banner';
