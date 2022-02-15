@@ -1,0 +1,61 @@
+{% extends "layout/layout.html" %} {% block content %}
+
+
+<!-- Blog details  -->
+<section class="relative overflow-hidden py-10 lg:py-20">
+    <div class="container px-3 mx-auto">
+        <div class=" mb-10 md:mb-20">
+                    <!-- Blog  title  -->
+        <div class=" mb-4 md:mb-10">
+            <h2 class=" text-heading-four md:text-heading-one">Article Title</h2>
+        </div>
+        <!-- img  -->
+        <a href="#" class="inline-block overflow-hidden relative rounded-2xl h-210 md:h-800 w-full mb-4 md:mb-10 " >
+            <img src="assets/images/blogs/img-one-lg.png" alt="blog-img" class="w-full h-full object-cover">
+        </a>
+
+        <!-- text  -->
+        <blockquote>
+            <!-- publisher  -->
+            <h6 class=" text-body-16/24 md:text-body-20/28 mb-4 md:mb-10 capitalize font-light">Published by Jane Doe </h6>
+            <div>
+                <p class=" mb-4 lg:mb-6 text-body-16/24 md:text-body-20/28">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class=" mb-4 lg:mb-6 text-body-16/24 md:text-body-20/28">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <p class=" mb-4 lg:mb-6 text-body-16/24 md:text-body-20/28">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                </p>
+            </div>
+        </blockquote> 
+
+        </div>
+
+        <!-- blogs nav  -->
+        <div class="relative flex items-center justify-between">
+            <div>
+                <a href="#" class=" text-body-16/24 md:text-body-20/28 flex items-center ">
+                    <span class="inline-block ">
+                        <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 3L2.5 10L9.5 17" stroke="#5B6771" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                <p class="ml-4 underline">Previous Article</p> 
+                </a>
+            </div>
+            <div>
+                <a href="#" class=" text-body-16/24 md:text-body-20/28 flex items-center ">
+                    <p class="mr-4 underline">Next Article</p> 
+                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 17L9.5 10L2.5 3" stroke="#5B6771" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
