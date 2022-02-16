@@ -1,0 +1,29 @@
+.testimonial-slider {
+	.swiper-wrapper {
+		margin: 40px 12px 20px 12px;
+	}
+
+	.swiper-pagination {
+		bottom: -5px;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+
+	.testimonial {
+		&-btn {
+			&--next,
+			&--prev {
+				color: #5b6771;
+				@media (max-width: 767px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
