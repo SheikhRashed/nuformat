@@ -25,14 +25,15 @@ var swiper = new Swiper('.testimonial-slider', {
 		},
 	},
 })
+
 // review slider
 var swiper = new Swiper('.review-slider', {
 	slidesPerView: 3,
 	spaceBetween: 24,
-	// autoplay: {
-	// 	delay: 1800,
-	// 	disableOnInteraction: false,
-	// },
+	autoplay: {
+		delay: 1800,
+		disableOnInteraction: false,
+	},
 	pagination: {
 		el: '.swiper-pagination',
 	},
@@ -49,6 +50,29 @@ var swiper = new Swiper('.review-slider', {
 			navigation: {
 				nextEl: '.swiper-button-next.testimonial-btn--next',
 				prevEl: '.swiper-button-prev.testimonial-btn--prev',
+			},
+		},
+	},
+})
+// post slider
+var swiper = new Swiper('.post-slider', {
+	spaceBetween: 20,
+	pagination: {
+		el: '.swiper-pagination',
+	},
+
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+		1024: {
+			slidesPerView: 4,
+			navigation: {
+				nextEl: '.instagram-btn--next',
+				prevEl: '.instagram-btn--prev',
 			},
 		},
 	},
