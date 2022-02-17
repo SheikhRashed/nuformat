@@ -4,10 +4,6 @@
 var swiper = new Swiper('.testimonial-slider', {
 	slidesPerView: 2,
 	spaceBetween: 24,
-	// autoplay: {
-	// 	delay: 1800,
-	// 	disableOnInteraction: false,
-	// },
 	pagination: {
 		el: '.swiper-pagination',
 	},
@@ -76,4 +72,10 @@ var swiper = new Swiper('.post-slider', {
 			},
 		},
 	},
+})
+
+$(document).ready(function () {
+	$('.popup').magnificPopup({
+		type: 'iframe',
+	})
 })
