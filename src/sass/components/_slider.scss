@@ -1,10 +1,18 @@
-.testimonial-slider {
+.testimonial-slider,
+.review-slider {
 	.swiper-wrapper {
 		margin: 40px 12px 20px 12px;
 	}
 
 	.swiper-pagination {
 		bottom: -5px;
+
+		&-bullet {
+			background-color: #5b6771;
+			&-active {
+				background-color: #9f6c1f;
+			}
+		}
 	}
 
 	.swiper-button-next,
