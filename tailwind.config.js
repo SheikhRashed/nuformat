@@ -57,10 +57,12 @@ module.exports = {
 				390: '390px',
 				480: '480px',
 				550: '550px',
+				560: '560px',
 				800: '800px ',
 			},
 			margin: {
 				120: '120px',
+				135: '135px',
 			},
 			boxShadow: {
 				box: '0px 2px 16px 0px #00000014',
