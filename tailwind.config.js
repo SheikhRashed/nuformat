@@ -34,6 +34,7 @@ module.exports = {
 			},
 			width: {
 				80: '80px',
+				104: '104px',
 				120: '120px',
 				140: '140px',
 				195: '195px',
@@ -52,6 +53,7 @@ module.exports = {
 			height: {
 				80: '80px',
 				48: '48px',
+				104: '104px',
 				120: '120px',
 				210: '210px',
 				260: '260px',
@@ -71,6 +73,7 @@ module.exports = {
 				box: '0px 2px 16px 0px #00000014',
 				bg: '0px 4px 8px 0px #00000029',
 				button: ' 0px 2px 8px 0px #0000003D',
+				'box-2': '1px 4px 8px 0px #ABCE3752',
 			},
 		},
 	},
