@@ -217,7 +217,7 @@ function build() {
 exports.default = parallel(
   dlt_dist,
   nunjucks,
-  //sassCompile,
+  sassCompile,
   tailWind,
   csspluginTask,
   copyjs2,
