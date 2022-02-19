@@ -14,16 +14,16 @@
       </div>
     </div>
   </section>
-  <section class="product pt-20 md:pt-14 pb-20 md:pb-14">
+  <section class="product md:pt-20 pt-8 pb-8 md:pb-20">
     <div class="container mx-auto px-3">
-      <h4 class="text-heading-one md:text-heading-three text-gray-71 mb-6">
+      <h4 class="text-heading-one md:text-heading-four text-gray-71 mb-4 md:mb-6">
         Products
       </h4>
       <div class="max-w-525 text-primary-button mb-6">
         Officia dolorem sint quibusdam modi. Nemo vitae molestias enim quidem blanditiis consequatur ut ducimus et. Nemo
         asperiores doloremque mque.
       </div>
-      <div class="serarch-box mb-20 md:mb-14 ">
+      <div class="serarch-box mb-6 md:mb-20 ">
         <input type="text" class="" placeholder="Search for product relative"/>
         <div class="cursor-pointer">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,13 +38,37 @@
         </div>
       </div>
       <div class="grid grid-cols-12 gap-x-10">
-        <div class="xl:col-span-3 lg:col-span-4 col-span-12">
-          <ul>
+        <div class="lg:col-span-3 md:col-span-5 col-span-12">
+          <ul class="hidden md:block">
             {% include "../templates/components/shopfilter.njk" %}
           </ul>
+          <div class="block md:hidden md:mb-0 mb-7">
+            <div class="serarch-box ">
+              <span class=" inline-flex mr-3">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.94605 1.5H18.0523C18.1978 1.50005 18.3401 1.5424 18.4619 1.62191C18.5838 1.70141 18.6799 1.81463 18.7385
+                      1.94777C18.7971 2.08092 18.8157 2.22824 18.7921 2.37179C18.7685 2.51533 18.7036 2.64891 18.6054 2.75625L12.4461
+                      9.53437C12.3179 9.67159 12.2474 9.85286 12.2492 10.0406V15.3469C12.2503 15.4715 12.22 15.5944 12.161 15.7042C12.102
+                      15.814 12.0162 15.9072 11.9117 15.975L8.91168 17.9719C8.79914 18.046 8.66872 18.0884 8.53411 18.0947C8.39951 18.101
+                      8.2657 18.0709 8.14675 18.0076C8.0278 17.9443 7.9281 17.8501 7.85814 17.7349C7.78818 17.6198 7.75054 17.4879 7.74918
+                      17.3531V10.0406C7.75098 9.85286 7.68049 9.67159 7.5523 9.53437L1.39293 2.75625C1.29473 2.64891 1.22987 2.51533 1.20624
+                      2.37179C1.18262 2.22824 1.20126 2.08092 1.25988 1.94777C1.3185 1.81463 1.41458 1.70141 1.53641 1.62191C1.65825 1.5424
+                      1.80057 1.50005 1.94605 1.5V1.5Z"
+                    stroke="#5B6771"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <select class=" h-full w-full focus:outline-none">
+                {% include "../templates/components/mbl-list.njk" %}
+              </select>
+            </div>
+          </div>
         </div>
-        <div class=" xl:col-span-9 lg:col-span-8 col-span-12">
-          <div class="grid grid-cols-3 gap-x-5 gap-y-10">
+        <div class=" lg:col-span-9 md:col-span-7 col-span-12">
+          <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-10">
             {% include "../templates/components/product-list.njk" %}
           </div>
         </div>
