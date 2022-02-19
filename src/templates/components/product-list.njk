@@ -8,18 +8,23 @@ is_content: true,
 
 {
 'name': 'Raw Vitamin C + Resveratrol',
+'src': "product-1",
 'price': '$12.90',
 "button": "Add to Cart"
 }
 ] %}
 {% for item in product_list %}
     {% if item.is_content %}
-        <div class=" bg-gray-fa border-t-4 border-brown">
-            mahedi{{ item.name }}
+        <div class=" bg-gray-fa border-t-4 border-brown-1">
+            <h4>
+                {{ item.name }}</h4>
+            <div class="content">
+                {{ item.contebt }}
+            </div>
         </div>
     {% else %}
         <div class="product-list">
-            bakul {{ item.name }}
+            {{ item.name }}
         </div>
     {% endif %}
 {% endfor %}
