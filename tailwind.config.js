@@ -1,6 +1,6 @@
 module.exports = {
 	content: ['./src/sass/**/*.{sass,scss,css}', './**/*.html'],
-
+	plugins: [require('tw-elements/dist/plugin')],
 	theme: {
 		extend: {
 			colors: {

@@ -1,0 +1,11 @@
+.accordion {
+	&-item {
+		border-radius: 0px !important;
+	}
+
+	&-button {
+		&:not(.collapsed) {
+			color: #5b6771;
+		}
+	}
+}

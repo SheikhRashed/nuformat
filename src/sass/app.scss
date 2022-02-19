@@ -9,8 +9,8 @@
 
 @layer utilities {
 	.container {
-		@media (min-width: 1280px) {
-			max-width: 1240px;
+		@media (min-width: 1200px) {
+			max-width: 1280px !important;
 		}
 	}
 }
@@ -22,6 +22,7 @@
 @import 'components/header';
 @import 'components/slider';
 @import 'components/pagination';
+@import 'components/accordion';
 
 // Layouts
 @import 'layouts/banner';
