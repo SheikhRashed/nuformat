@@ -8,23 +8,31 @@ is_content: true,
 
 {
 'name': 'Raw Vitamin C + Resveratrol',
-'src': "product-1",
+'src': "product-1.png",
 'price': '$12.90',
 "button": "Add to Cart"
 }
 ] %}
 {% for item in product_list %}
     {% if item.is_content %}
-        <div class=" bg-gray-fa border-t-4 border-brown-1">
-            <h4>
+        <div class=" bg-gray-fa border-t-4 border-brown-1 py-9 px-4 h-max">
+            <h4 class=" text-heading-four font-bold mb-2 text-gray-71">
                 {{ item.name }}</h4>
-            <div class="content">
+            <div class="content body-20/28 text-gray-71">
                 {{ item.contebt }}
             </div>
         </div>
     {% else %}
         <div class="product-list">
-            {{ item.name }}
-        </div>
-    {% endif %}
-{% endfor %}
+            <a class="img-box   mb-4 block" href="#">
+                <img src="assets/images/all-img/{{ item.src }}" alt="" class=" object-cover block w-full"></a>
+                <div class="product-content">
+                    <h5 class=" font-normal mb-4">
+                        <a href="#" class=" text-gray-71 text-body-20/28">{{ item.name }}</a>
+                    </h5>
+                    <span class="text-gray-71 text-body-20/28  font-light block mb-4">{{ item.price }}</span>
+                    <button type="button" class=" bg-primary_1 text-white  block w-full text-center ">{{ item.button }}</button>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}

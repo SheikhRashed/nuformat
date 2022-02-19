@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "primary_1": "#ABCE37",
         "gray-71": " #5B6771",
         "white-f8": "#F8F8F8",
         "white-fb": "#FBFBFB",
@@ -61,6 +62,7 @@ module.exports = {
         104: "104px",
         120: "120px",
         210: "210px",
+        211: "211px",
         260: "260px",
         280: "280px",
         306: "306px",
