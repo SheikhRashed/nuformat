@@ -15,6 +15,9 @@ module.exports = {
         "red-29": "#CA2729",
         "orange-2a": "#CF692A",
         "orange-1f": "#9F6C1F",
+        "green-f2": "#F2FFC8",
+        "gray-fa": "#FAFAFA",
+        brown: "#C9AB7E",
       },
       fontFamily: {
         primary: ["halyard-regular"],

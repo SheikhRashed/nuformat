@@ -23,7 +23,7 @@
         Officia dolorem sint quibusdam modi. Nemo vitae molestias enim quidem blanditiis consequatur ut ducimus et. Nemo
         asperiores doloremque mque.
       </div>
-      <div class="serarch-box mb-20 md:mb-14">
+      <div class="serarch-box mb-20 md:mb-14 ">
         <input type="text" class="" placeholder="Search for product relative"/>
         <div class="cursor-pointer">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,12 +37,16 @@
           </svg>
         </div>
       </div>
-      <div class="grid">
-        <div class=" col-span-3">
-          {% include "../templates/components/shopfilter.njk" %}
+      <div class="grid grid-cols-12 gap-x-10">
+        <div class="xl:col-span-3 lg:col-span-4 col-span-12">
+          <ul>
+            {% include "../templates/components/shopfilter.njk" %}
+          </ul>
         </div>
-        <div class=" col-span-9">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, laudantium.
+        <div class=" xl:col-span-9 lg:col-span-8 col-span-12">
+          <div class="grid grid-cols-3 gap-5">
+            {% include "../templates/components/product-list.njk" %}
+          </div>
         </div>
       </div>
     </div>

@@ -74,13 +74,13 @@ icon: "icon-18.svg"
 
 ] %}
 {% for item in filter_list_item %}
-    <ul>
-        <li>
-            <a href="#">
-                <div class="icon">
-                    <img src="assets/images/all-img/{{ item.icon }}" alt=""></div>
+    <li>
+        <a href="#" class="flex  items-center text-xl capitalize transition-all hover:bg-green-f2 px-8 py-4 rounded-full">
+            <div class="icon mr-4  ">
+                <img src="assets/images/all-img/{{ item.icon }}" alt=""></div>
+                <div class="title">
                     {{ item.title }}
-                </a>
-            </li>
-        </ul>
+                </div>
+            </a>
+        </li>
     {% endfor %}
