@@ -1,0 +1,86 @@
+{% set filter_list_item = [
+{
+title: "All",
+icon: "icon-1.svg"
+},
+{
+title: "Immunity",
+icon: "icon-2.svg"
+},
+{
+title: "Brain",
+icon: "icon-3.svg"
+},
+{
+title: "Energy",
+icon: "icon-4.svg"
+},
+{
+title: "Eyes",
+icon: "icon-5.svg"
+},
+{
+title: "Sleep",
+icon: "icon-6.svg"
+},
+{
+title: "Stress",
+icon: "icon-7.svg"
+},
+{
+title: "Heart",
+icon: "icon-8.svg"
+},
+{
+title: "Skin",
+icon: "icon-9.svg"
+},
+{
+title: "Nails",
+icon: "icon-10.svg"
+},
+{
+title: "Hair",
+icon: "icon-11.svg"
+},
+{
+title: "Prenatal",
+icon: "icon-12.svg"
+},
+{
+title: "Joints",
+icon: "icon-13.svg"
+},
+{
+title: "Digestion",
+icon: "icon-14.svg"
+},
+{
+title: "Bones",
+icon: "icon-15.svg"
+},
+{
+title: "Fitness",
+icon: "icon-16.svg"
+},
+{
+title: "Women’s Health",
+icon: "icon-17.svg"
+},
+{
+title: "Men’s Health",
+icon: "icon-18.svg"
+}
+
+] %}
+{% for item in filter_list_item %}
+    <ul>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <img src="assets/images/all-img/{{ item.icon }}" alt=""></div>
+                    {{ item.title }}
+                </a>
+            </li>
+        </ul>
+    {% endfor %}
