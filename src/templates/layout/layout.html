@@ -10,6 +10,10 @@
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="assets/css/app.css" />
     </head>
     <body class="{{body_class}} font-primary text-gray-71 ">
@@ -22,7 +26,7 @@
                    <p class="text-body-16/24 text-white text-center ">20% for them. 20% for you. Refer a friend now.</p>
                 </div>
             </div>
-            <nav class="relative">
+            <nav class="relative navbar ">
                 <div class="container mx-auto px-3">
                   <!-- nav wrapper  -->
                   <div class="flex items-center justify-between space-x-6">
@@ -49,14 +53,14 @@
                         </ul>
                     </div>
                     <!-- menu icon  -->
-                    <div class=" block lg:hidden">
+                    <div class=" menu-bar block lg:hidden">
                         <img src="assets/images/icons/bar.svg" alt="icon">
                     </div>
                       
                     <!-- Brand logo  -->
                      <div>
                          <a href="#">
-                             <img src="assets/images/logo/brand-format.png" alt="brand-logo" class=" max-w-full">
+                             <img src="assets/images/icons/logo.svg" alt="brand-logo" class=" max-w-full">
                          </a>
                      </div>
 
@@ -75,6 +79,28 @@
                             </li>
                          </ul>
                      </div>
+                  </div>
+                  <!-- mobile menu  -->
+                  <div class="navbar-mobile">
+                    <ul class="menu flex flex-col items-center space-y-4 py-4 px-6 ">
+                        <li class="menu-item w-full"><a href="#" class="text-body-20/28 font-normal capitalize text-gray-71">Home</a></li>
+                        <li class="menu-item w-full menu-item__dropdown ">
+                            <a href="#" class="text-body-20/28 font-normal capitalize text-gray-71 flex items-center justify-between w-full ">Learn
+                                <span class="  ml-3  inline-block">
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" fill="#5B6771"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul>
+                                <li><a href="#" class="text-body-16/24 font-normal capitalize text-gray-71"> demo text </a></li>
+                                <li><a href="#" class="text-body-16/24 font-normal capitalize text-gray-71"> demo text </a></li>
+                                <li><a href="#" class="text-body-16/24 font-normal capitalize text-gray-71"> demo text </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item w-full"><a href="#" class="text-body-20/28 font-normal capitalize text-gray-71">Shop</a></li>
+                        <li class="menu-item w-full"><a href="#" class="text-body-20/28 font-normal capitalize text-gray-71">Blog</a></li>
+                    </ul>
                   </div>
                 </div>
             </nav>
@@ -202,10 +228,10 @@
                                 </p>
                                 <form action="#">
                                     <div class="flex flex-col items-start md:flex-row mt-5">
-                                        <div class="max-w-full w-full h-48 relative overflow-hidden rounded-3xl mb-4 md:mr-10 border border-[#5B67713D] ">
+                                        <div class="max-w-full w-full h-[48px] relative overflow-hidden rounded-3xl mb-4 md:mr-10 border border-[#5B67713D] ">
                                             <input type="text" placeholder="Email Address" class="outline-none active:outline-none w-full h-full px-4 py-3 placeholder:text-gray-71" />
                                         </div>
-                                        <button type="submit" class="inline-block relative overflow-hidden rounded-3xl w-140 h-48 bg-white shadow-button">
+                                        <button type="submit" class="inline-block relative overflow-hidden rounded-3xl w-140 h-[48px] bg-white shadow-button">
                                             Send
                                         </button>
                                     </div>
@@ -301,7 +327,7 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
         <script src="assets/js/app.js"></script>
     </body>
 </html>

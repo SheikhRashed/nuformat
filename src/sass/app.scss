@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'halyard-regular';
-	src: url(../fonts/Halyard-Regular.ttf);
+  font-family: "halyard-regular";
+  src: url(../fonts/Halyard-Regular.ttf);
 }
 
 @tailwind base;
@@ -8,109 +8,34 @@
 @tailwind utilities;
 
 @layer utilities {
-	.container {
-		@media (min-width: 1280px) {
-			max-width: 1240px;
-		}
-	}
+  .container {
+    @media (min-width: 1200px) {
+      max-width: 1280px !important;
+    }
+  }
+
+  .serarch-box {
+    max-width: 306px;
+    border: 1px solid rgba(91, 103, 113, 0.32);
+    @apply h-14 flex justify-between rounded-full items-center  px-4;
+    input {
+      @apply h-full  w-full focus:outline-none bg-transparent border-none pr-3;
+      &::placeholder {
+        color: rgba(91, 103, 113, 0.56);
+      }
+    }
+  }
 }
 
 // vendors/library/plugin
-@import 'vendors/magnific-popup.scss';
+@import "vendors/magnific-popup.scss";
 
 // components
-@import 'components/header';
-@import 'components/slider';
-@import 'components/pagination';
+@import "components/header";
+@import "components/slider";
+@import "components/pagination";
+@import "components/accordion";
 
 // Layouts
-@import 'layouts/banner';
-
-
-
-.custom-circle{
-	&.large-circle{
-		&::before{
-		width: 40px;
-		height: 40px;
-		bottom: -52px;
-		}
-	}
-	
-	&::before{
-		content: "";
-		width: 24px;
-		height: 24px;
-		bottom: -43px;
-		left: 0;
-		border-radius: 100%;
-		position: absolute;
-		background-color: #C9AB7E;
-		@media only screen and (max-width: 1024px) {
-			content: none;
-		}
-	}
-	
-}
-
-.custom-border{
-	&::before{
-		content: "";
-		left: 0;
-		bottom: 0;
-		width: 66%;
-		height: 1px;
-		position: absolute;
-		background-color: #CBCED2;
-		@media only screen and (max-width: 1024px) {
-			content: none;
-		}
-	}
-}
-
-.small-circle.custom-circle{
-	&::before{
-		bottom: -103px;
-		width: 16px;
-		height: 16px;
-		@media only screen and (max-width: 1024px) {
-			content: none;
-		}
-	}
-	
-}
-
-.map-border{
-	&::before, 
-	&:after{
-		content: "";
-		right: 0;
-		top: 0;
-		height: 45%;
-		width: 1px;
-		position: absolute;
-		background-color: #CBCED2;
-		@media only screen and (max-width: 1024px) {
-			content: none;
-		}
-	}
-	&::after{
-		top: 45%;
-		height: 1px;
-		width: 45%;
-	}
-}
-
-.map-circle{
-		width: 16px;
-    height: 16px;
-    bottom: 54%;
-    right: -5px;
-    border-radius: 100%;
-    position: absolute;
-    background-color: #C9AB7E;
-    z-index: 1;
-		@media only screen and (max-width: 1024px) {
-			display: none;
-		}
-}
+@import "layouts/banner";
+@import "layouts/journey";

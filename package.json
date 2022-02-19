@@ -17,7 +17,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.10.4",
 		"@babel/preset-env": "^7.10.4",
-		"autoprefixer": "^10.4.0",
+		"autoprefixer": "^10.4.2",
 		"browser-sync": "^2.26.7",
 		"del": "^3.0.0",
 		"gulp": "^4.0.2",
@@ -36,14 +36,15 @@
 		"imagemin-jpeg-recompress": "^5.1.0",
 		"imagemin-pngquant": "^5.1.0",
 		"node-sass": "^4.14.1",
-		"postcss": "^8.3.11",
-		"tailwindcss": "^3.0.22"
+		"postcss": "^8.4.6",
+		"tailwindcss": "^3.0.23"
 	},
 	"dependencies": {
 		"gulp-clean-css": "^4.3.0",
 		"gulp-cssbeautify": "^3.0.0",
 		"gulp-dart-sass": "^1.0.2",
 		"gulp-postcss": "^9.0.1",
-		"swiper": "^7.3.2"
+		"swiper": "^7.3.2",
+		"tw-elements": "^1.0.0-alpha11"
 	}
 }
