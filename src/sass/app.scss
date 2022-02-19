@@ -16,9 +16,13 @@
 
   .serarch-box {
     max-width: 306px;
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
     border: 1px solid rgba(91, 103, 113, 0.32);
     @apply h-14 flex justify-between rounded-full items-center  px-4;
-    input {
+    input,
+    select {
       @apply h-full  w-full focus:outline-none bg-transparent border-none pr-3;
       &::placeholder {
         color: rgba(91, 103, 113, 0.56);
