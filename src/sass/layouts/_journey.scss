@@ -1,0 +1,84 @@
+.custom-circle {
+  &.large-circle {
+    &::before {
+      width: 40px;
+      height: 40px;
+      bottom: -52px;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    bottom: -43px;
+    left: 0;
+    border-radius: 100%;
+    position: absolute;
+    background-color: #c9ab7e;
+    @media only screen and (max-width: 1024px) {
+      content: none;
+    }
+  }
+}
+
+.custom-border {
+  &::before {
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 66%;
+    height: 1px;
+    position: absolute;
+    background-color: #cbced2;
+    @media only screen and (max-width: 1024px) {
+      content: none;
+    }
+  }
+}
+
+.small-circle.custom-circle {
+  &::before {
+    bottom: -103px;
+    width: 16px;
+    height: 16px;
+    @media only screen and (max-width: 1024px) {
+      content: none;
+    }
+  }
+}
+
+.map-border {
+  &::before,
+  &:after {
+    content: "";
+    right: 0;
+    top: 0;
+    height: 45%;
+    width: 1px;
+    position: absolute;
+    background-color: #cbced2;
+    @media only screen and (max-width: 1024px) {
+      content: none;
+    }
+  }
+  &::after {
+    top: 45%;
+    height: 1px;
+    width: 45%;
+  }
+}
+
+.map-circle {
+  width: 16px;
+  height: 16px;
+  bottom: 54%;
+  right: -5px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #c9ab7e;
+  z-index: 1;
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
+}
