@@ -204,7 +204,10 @@ function watchfiles() {
   watch([files.image_path], series(imagetask, reload));
   watch([files.fonts_path], series(copyfonts, reload));
   watch(
-    ["src/templates/**/*.html", "src/pages/**/*.html"],
+    [
+      "src/templates/**/*.+(html|nunjucks|njk)",
+      "src/pages/**/*.+(html|nunjucks|njk)",
+    ],
     series(nunjucks, reload)
   );
   watch(files.output + "/*").on("change", browserSync.reload);
