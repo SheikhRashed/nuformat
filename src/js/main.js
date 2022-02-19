@@ -9,8 +9,6 @@ document.querySelector(".menu-bar").addEventListener("click", function (e) {
 
 // testimonial slider
 var swiper = new Swiper(".testimonial-slider", {
-	slidesPerView: 2,
-	spaceBetween: 24,
 	pagination: {
 		el: ".swiper-pagination",
 	},
@@ -18,9 +16,11 @@ var swiper = new Swiper(".testimonial-slider", {
 	breakpoints: {
 		0: {
 			slidesPerView: 1,
+			spaceBetween: 12,
 		},
 		768: {
 			slidesPerView: 2,
+			spaceBetween: 24,
 			navigation: {
 				nextEl: ".swiper-button-next.testimonial-btn--next",
 				prevEl: ".swiper-button-prev.testimonial-btn--prev",
