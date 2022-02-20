@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "gulpfile.js",
 	"scripts": {
-		"dev": "gulp && npx tailwindcss -i ./src/sass/app.scss -o ./dist/assets/css/app.css --watch"
+		"dev": "gulp && npx tailwindcss -i ./src/sass/app.scss -o ./dist/assets/css/app.css --watch",
+		"build": "gulp build"
 	},
 	"keywords": [
 		"nunjucks-starter",
