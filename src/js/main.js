@@ -4,6 +4,7 @@
 const navbar = document.querySelector("header nav")
 document.querySelector(".menu-bar").addEventListener("click", function (e) {
 	e.preventDefault()
+	console.log("active class add")
 	navbar.classList.toggle("active")
 })
 
