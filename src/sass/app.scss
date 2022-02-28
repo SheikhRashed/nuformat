@@ -14,24 +14,22 @@
 		}
 	}
 
-	.search-box {
-		max-width: 306px;
-		@media (max-width: 768px) {
-			max-width: 100%;
-		}
-
-		select {
-			@apply h-full  w-full focus:outline-none bg-transparent border-none pr-3;
-			&::placeholder {
-				color: rgba(91, 103, 113, 0.56);
+	.search {
+		&-box {
+			border: 1px solid rgba(91, 103, 113, 0.32);
+			@apply h-14 flex justify-between rounded-full items-center  px-4;
+			select {
+				@apply h-full  w-full focus:outline-none bg-transparent border-none pr-3;
+				&::placeholder {
+					color: rgba(91, 103, 113, 0.56);
+				}
 			}
 		}
-		input {
-			border: 1px solid rgba(91, 103, 113, 0.32);
-
-			&:focus {
-				outline: none;
-				border: 1px solid #abce37;
+		&-field {
+			input {
+				&:focus {
+					border: 1px solid #abce37;
+				}
 			}
 		}
 	}

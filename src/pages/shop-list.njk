@@ -16,15 +16,15 @@
   </section>
   <section class="product md:pt-20 pt-8 pb-8 md:pb-20">
     <div class="container mx-auto px-3">
-      <h4 class="text-heading-one md:text-heading-four text-gray-71 mb-4 md:mb-6">
+      <h4 class="text-heading-four md:text-heading-one text-gray-71 mb-4 md:mb-6">
         Products
       </h4>
-      <div class="max-w-525 text-primary-button mb-6">
+      <p class="max-w-525 text-body-16/24 md:text-primary-button mb-6">
         Officia dolorem sint quibusdam modi. Nemo vitae molestias enim quidem blanditiis consequatur ut ducimus et. Nemo
         asperiores doloremque mque.
-      </div>
-      <div class="search-box mb-6 md:mb-20 h-14 flex justify-between  items-center relative overflow-hidden ">
-        <input type="text" class="w-full h-full rounded-full px-4 absolute pr-[48px] foucs:outline-none " placeholder="Search for product relative"/>
+      </p>
+      <div class="mb-6 md:mb-20 h-14 flex justify-between  items-center relative overflow-hidden max-w-full md:max-w-[306px] search-field ">
+        <input type="text" class="w-full h-full rounded-full px-4 absolute pr-[48px] border border-[#5B677152] focus:outline-none  " placeholder="Search for product relative"/>
         <div class="cursor-pointer absolute right-[18px] ">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -37,14 +37,14 @@
           </svg>
         </div>
       </div>
-      <div class="grid grid-cols-12 gap-x-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 md:gap-x-10">
         <div class="lg:col-span-3 md:col-span-5 col-span-12">
           <ul class="hidden md:block">
             {% include "../templates/components/shopfilter.njk" %}
           </ul>
           <div class="block md:hidden md:mb-0 mb-7">
-            <div class="search-box ">
-              <span class=" inline-flex mr-3">
+            <div class="search-box  relative max-w-full md:max-w-[306px]">
+              <span class=" mr-3 absolute left-[18px]">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M1.94605 1.5H18.0523C18.1978 1.50005 18.3401 1.5424 18.4619 1.62191C18.5838 1.70141 18.6799 1.81463 18.7385
@@ -61,7 +61,7 @@
                     stroke-linejoin="round"/>
                 </svg>
               </span>
-              <select class=" h-full w-full focus:outline-none">
+              <select class=" h-full w-full focus:outline-none pl-[30px]">
                 {% include "../templates/components/mbl-list.njk" %}
               </select>
             </div>
