@@ -2,7 +2,7 @@
 node_modules
 *.txt
 *.DS_Store
-*dist/**/*
-*build/**/*
+# *dist/**/*
+# *build/**/*
 *.prettierignore
 
